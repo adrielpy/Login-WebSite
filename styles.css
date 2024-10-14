@@ -1,0 +1,154 @@
+body,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Archivo;
+}
+.ctnPrincipal {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.ctnImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  background-color: #f3fff2;
+}
+.ctnForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  gap: 24px;
+}
+.ctnTitulos {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: left;
+}
+.subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+}
+.ctnInput {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.ctnInput p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.ctnInput input {
+  width: 400px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 16px;
+  background-color: #f7fafc;
+}
+.ctnLembreSenha {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.ctnLembre {
+  display: flex;
+  gap: 6px;
+}
+.ctnLembre p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+.esqSenha {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e9e6a;
+}
+.btnEntrar {
+  width: 400px;
+  height: 52px;
+  border-radius: 4px;
+  background-color: #1e9e6a;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.btnGoogle {
+  width: 400px;
+  height: 52px;
+  border-radius: 4px;
+  background-color: #1a202c;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.ctnNtcCdt {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  gap: 4px;
+}
+.ctnNtcCdt p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.ctnNtcCdt p:nth-of-type(2) {
+  color: #1e9e6a;
+}
+@media only screen and (max-width: 1024px) {
+  .ctnImg {
+    display: none;
+  }
+  .ctnForm {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .ctnTitulos,
+  .ctnLembreSenha,
+  .btnEntrar,
+  .btnGoogle,
+  .ctnInput input,
+  .ctnInput,
+  .ctnNtcCdt {
+    width: 100%;
+  }
+  .ctnForm {
+    padding: 32px;
+  }
+}
