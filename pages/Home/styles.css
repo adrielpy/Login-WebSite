@@ -1,0 +1,38 @@
+body,
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Archivo;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3fff2;
+  padding: 10px 20px;
+}
+
+.navbar .titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .sairBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.navbar .sairBtn:hover {
+  background-color: #45a049;
+}
+
+.ctnContent {
+  padding: 32px;
+}

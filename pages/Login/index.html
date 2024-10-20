@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
@@ -15,18 +15,18 @@
       <div class="ctnImg">
         <img src="../../assets/mulequeZoiudo.png" alt="" />
       </div>
-      <div class="ctnForm">
+      <form class="ctnForm" id="login-form">
         <div class="ctnTitulos">
           <h4 class="subtititle">Bem vindo de volta</h4>
           <h2 class="title">Faça login na sua conta</h2>
         </div>
         <div class="ctnInput">
           <p>E-mail</p>
-          <input type="email" placeholder="exemplo@gmail.com" />
+          <input id="email" type="email" placeholder="exemplo@gmail.com" />
         </div>
         <div class="ctnInput">
           <p>Senha</p>
-          <input type="password" placeholder="0123456789" />
+          <input id="password" type="password" placeholder="0123456789" />
         </div>
         <div class="ctnLembreSenha">
           <div class="ctnLembre">
@@ -35,15 +35,17 @@
           </div>
           <p class="esqSenha">Esqueceu sua senha?</p>
         </div>
-        <button class="btnEntrar">Entrar na conta</button>
-        <button class="btnGoogle">
+        <button class="btnEntrar" type="submit">Entrar na conta</button>
+        <button id="btn-login-google" class="btnGoogle">
           <img src="../../assets/gugo.png" alt="" /> Ou faça login com o google
         </button>
         <div class="ctnNtcCdt">
           <p>Não tem uma conta?</p>
           <p>Cadastre-se</p>
         </div>
-      </div>
+      </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
